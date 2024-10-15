@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="faq-container">
+        <aside class="faq-sidebar">
+            <h1>FAQs</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <button class="contact-btn">Contact</button>
+        </aside>
+
+        <div class="faq-content">
+            <div class="faq-item">
+                <button class="faq-question">Question text goes here11111
+                    <span class="arrow"></span>
+                </button>
+                <div class="faq-answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                </div>
+            </div>
+
+            <!-- Add more FAQ items as needed -->
+            <div class="faq-item">
+                <button class="faq-question">Question text goes here
+                    <span class="arrow"></span>
+                </button>
+                <div class="faq-answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Question text goes here
+                    <span class="arrow"></span>
+                </button>
+                <div class="faq-answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Question text goes here
+                    <span class="arrow"></span>
+                </button>
+                <div class="faq-answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Question text goes here
+                    <span class="arrow"></span>
+                </button>
+                <div class="faq-answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle the FAQ answers, allowing only one open at a time
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Close all open items
+                faqItems.forEach(i => {
+                    if (i !== item) {
+                        i.classList.remove('open');
+                        i.querySelector('.faq-answer').style.maxHeight = '0';
+                        i.querySelector('.arrow').classList.remove('rotate');
+                    }
+                });
+
+                // Toggle the current item
+                item.classList.toggle('open');
+                const answer = item.querySelector('.faq-answer');
+                const arrow = item.querySelector('.arrow');
+                if (item.classList.contains('open')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    arrow.classList.add('rotate');
+                } else {
+                    answer.style.maxHeight = '0';
+                    arrow.classList.remove('rotate');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the body to center the login container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styling for the main login container */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(211, 175, 175, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Styling for the form heading */
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Styling for input groups */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Styling for labels */
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Styling for the input fields */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Focus effect for the input fields */
+.input-group input:focus {
+    border-color: #ff7e5f;
+}
+
+/* Styling for the submit button */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+button:hover {
+    background-color: #feb47b;
+}

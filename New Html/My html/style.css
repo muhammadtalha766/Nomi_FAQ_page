@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+div{
+    background-color: black;
+    color: white;
+    border: 20px, 20px, 20px, 20px;
+}
+
+button{
+    background-color: rgb(192, 121, 15)
+    /* use of rgb color  */
+}
+
+#navbar{
+   color: orange;
+   text-decoration: none;
+   /* text-size-adjust: 40px; check the error in this code */
+}
+
+#one{
+    margin: 100px;
+    color : white;
+    text-decoration: none ;
+}

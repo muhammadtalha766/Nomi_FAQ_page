@@ -1,0 +1,20 @@
+div{
+    height: 150px;
+    width: 150px; 
+    border: 10px black solid ;
+    border-radius: 50%;
+    border-top-color: rgb(195, 195, 18);
+    transition: animation;
+    transition-property: all;
+    transition-timing-function: 1s;
+    transition-duration: infinite;
+}
+
+@keyframes animation {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360 deg;
+    }
+}

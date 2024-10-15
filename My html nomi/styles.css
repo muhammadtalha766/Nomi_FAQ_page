@@ -1,0 +1,129 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the FAQ section */
+.faq-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+/* Sidebar styling */
+.faq-sidebar {
+    flex: 1 1 100%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.faq-sidebar h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.faq-sidebar p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
+
+/* FAQ content styling */
+.faq-content {
+    flex: 2 1 100%;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background-color: #f1f1f1;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 15px;
+}
+
+.faq-answer p {
+    padding: 10px 0;
+    color: #555;
+}
+
+/* Arrow Styling */
+.arrow {
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.rotate {
+    transform: rotate(225deg);
+}
+
+/* Media Query for smaller screens */
+@media (min-width: 600px) {
+    .faq-container {
+        flex-direction: row;
+    }
+
+    .faq-sidebar {
+        flex: 1 1 30%;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .faq-content {
+        flex: 2 1 70%;
+    }
+}

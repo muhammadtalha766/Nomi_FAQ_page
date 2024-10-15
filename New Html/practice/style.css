@@ -1,0 +1,30 @@
+
+div{
+    height: 173px;
+    width: 63px;
+    background-color: rgb(17, 7, 9);
+}
+#box1{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border: 2px solid black ; 
+    margin: 5px;
+    border-radius: 50%;
+}
+#box2{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border: 2px solid black ; 
+    margin: 5px;
+    border-radius: 50%;
+}
+#box3{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(73, 168, 9);
+    border: 2px solid black ; 
+    margin: 5px;
+    border-radius: 50%;
+}
